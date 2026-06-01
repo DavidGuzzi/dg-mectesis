@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mectesis"
+version = "0.1.0"
+description = "Comparación empírica de modelos clásicos de series de tiempo vs. modelos fundacionales (Chronos-2) — código reproducible del anexo de tesis."
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "scipy>=1.10",
+    "statsmodels>=0.14",
+    "arch>=6.0",
+    "properscoring",
+    "statsforecast>=2.0",
+    "torch>=2.0",
+    "chronos-forecasting[extras]>=2.2",
+    "matplotlib>=3.7",
+    "seaborn>=0.12",
+    "pyyaml>=6.0",
+    "nbformat>=5.0",
+    "notebook>=7.0",
+    "ipykernel",
+    "ipywidgets",
+]
+
+[tool.setuptools.packages.find]
+include = ["mectesis*"]

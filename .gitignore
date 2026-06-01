@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+build/
+dist/
+
+# Entornos virtuales
+venv/
+.venv/
+.venv_mectesis/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs de corrida de los notebooks de simulación
+notebooks/results/**/run_*.log
+*.log
+
+# Salidas generadas por tesis_visuales.ipynb (se regeneran al correr el notebook)
+outputs/
+
+# Editores / SO
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# IMPORTANTE: a diferencia del repo de trabajo original, este repo SÍ versiona
+# los CSV de resultados (notebooks/results/**/*.csv) y el dato de origen
+# (data/raw/data.csv) para que los notebooks sean reproducibles al clonar.

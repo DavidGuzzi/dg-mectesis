@@ -1,0 +1,23 @@
+# Núcleo científico
+numpy>=1.24.0
+pandas>=2.0.0
+scipy>=1.10.0
+properscoring>=0.1
+
+# Modelos clásicos y fundacionales
+statsmodels>=0.14.0
+arch>=6.0.0
+statsforecast>=2.0
+torch>=2.0.0
+chronos-forecasting[extras]>=2.2
+
+# Notebook y visualización
+notebook>=7.0.0
+ipykernel>=6.0.0
+ipywidgets>=8.0.0
+nbformat>=5.0.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Config
+pyyaml>=6.0
