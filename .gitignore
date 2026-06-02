@@ -17,6 +17,10 @@ env/
 # Jupyter
 .ipynb_checkpoints/
 
+# Fuentes .py de los notebooks (formato percent) + tooling de build.
+# Se conservan localmente para editar; el repo versiona solo los .ipynb generados.
+notebooks/src/
+
 # Logs de corrida de los notebooks de simulación
 notebooks/results/**/run_*.log
 *.log
