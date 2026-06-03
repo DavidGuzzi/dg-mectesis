@@ -13,6 +13,7 @@ dependencies = [
     "scipy>=1.10",
     "statsmodels>=0.14",
     "arch>=6.0",
+    "ruptures>=1.1",
     "properscoring",
     "statsforecast>=2.0",
     "torch>=2.0",
