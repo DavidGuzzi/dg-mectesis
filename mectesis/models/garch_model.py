@@ -435,7 +435,7 @@ class AREGARCHModel(BaseModel):
     """
     AR(p)+EGARCH(p,o,q) model — core for Exp 1.21.
 
-    Nelson's (1991) EGARCH models log-variance, ensuring positivity without
+    EGARCH models log-variance, ensuring positivity without
     sign restrictions. Multi-step variance forecasts use arch's simulation
     method since no analytic closed form exists for h > 1.
 

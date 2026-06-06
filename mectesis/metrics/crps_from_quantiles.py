@@ -1,8 +1,4 @@
-"""Proper CRPS estimator from quantiles via trapezoidal pinball loss.
-
-Reference: Gneiting & Raftery (2007), JASA 102(477), sec. 2.
-Same family as the WQL reported by Chronos (Ansari et al. 2024).
-"""
+"""Proper CRPS estimator from quantiles via trapezoidal pinball loss."""
 import numpy as np
 
 

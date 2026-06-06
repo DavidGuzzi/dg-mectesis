@@ -8,7 +8,7 @@ from .base import BaseDGP
 
 class MarkovSwitchingAR(BaseDGP):
     """
-    AR(1) Markov Switching process with 2 regimes (Hamilton, 1989).
+    AR(1) Markov Switching process with 2 regimes.
 
     Y_t = mu[S_t] + phi[S_t] * Y_{t-1} + sigma[S_t] * eps_t,  eps_t ~ N(0,1)
 

@@ -192,8 +192,6 @@ class MultivariateMonteCarloEngine:
                 )
 
             # Joint multivariate row (var_idx = -1): trace_msfe + avg_marginal_crps
-            # See notebook Cell 1.5 for the justification of these two metrics
-            # and the descarted alternatives (ES, VS, multivariate CRPS).
             var_results[-1] = self._compute_joint_row(
                 error_mats[mname],
                 crps_mats[mname] if model in models_crps else None,

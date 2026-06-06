@@ -176,7 +176,7 @@ class AR1GJRGARCH(BaseDGP):
 
 class AR1EGARCH(BaseDGP):
     """
-    AR(1)–EGARCH(1,1) process (Nelson, 1991).
+    AR(1)–EGARCH(1,1) process.
 
     Mean:     Y_t = phi * Y_{t-1} + eps_t,  eps_t = sigma_t * z_t,  z_t ~ N(0,1)
     Log-var:  ln(sigma_t^2) = omega

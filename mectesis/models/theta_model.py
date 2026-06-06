@@ -8,8 +8,7 @@ from .base import BaseModel
 
 class ThetaModel(BaseModel):
     """
-    Theta forecasting method (Assimakopoulos & Nikolopoulos, 2000)
-    via statsmodels.tsa.forecasting.theta.ThetaModel.
+    Theta forecasting method via statsmodels.tsa.forecasting.theta.ThetaModel.
 
     Prediction intervals use prediction_intervals(steps, alpha=1-level).
     CRPS assumes a Gaussian predictive distribution derived from the 95 % interval.

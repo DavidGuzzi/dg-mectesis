@@ -1,7 +1,7 @@
 """
 Statistical diagnostics for empirical series. Every test returns a
 pandas DataFrame with at least columns {stat, pvalue, conclusion} so
-results can be concatenated in the notebook with consistent formatting.
+results can be concatenated by the caller with consistent formatting.
 """
 
 from itertools import product

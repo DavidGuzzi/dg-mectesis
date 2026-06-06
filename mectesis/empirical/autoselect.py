@@ -1,12 +1,7 @@
 """
-Auto-selection wrappers over Nixtla's statsforecast (numba/C port of
-Hyndman's R `forecast` package). Adapt AutoARIMA, AutoETS, AutoTheta
-to the repo's BaseModel interface (fit, forecast, forecast_intervals,
-compute_crps).
-
-Reference: Garza, F., Mergenthaler-Canseco, M., Olivares, K. G., &
-Challu, C. (2022). statsforecast: Lightning fast forecasting with
-statistical and econometric models. Nixtla.
+Auto-selection wrappers over Nixtla's statsforecast. Adapt AutoARIMA,
+AutoETS, AutoTheta to the repo's BaseModel interface (fit, forecast,
+forecast_intervals, compute_crps).
 """
 
 import numpy as np
@@ -74,7 +69,7 @@ class _StatsForecastWrapper(BaseModel):
 
 
 class AutoARIMAModel(_StatsForecastWrapper):
-    """statsforecast AutoARIMA (Hyndman-Khandakar) wrapper."""
+    """statsforecast AutoARIMA wrapper."""
 
     def _build(self):
         from statsforecast.models import AutoARIMA
@@ -112,8 +107,7 @@ class AutoThetaModel(_StatsForecastWrapper):
 class AutoSARIMAXModel(_StatsForecastWrapper):
     """statsforecast AutoARIMA with exogenous covariates (xreg).
 
-    Equivalent to R `auto.arima(y, xreg=X)`. Selects (p,d,q)(P,D,Q)[s]
-    by Hyndman-Khandakar / AICc and uses the supplied X as additional
+    Selects (p,d,q)(P,D,Q)[s] by AICc and uses the supplied X as additional
     regressors at fit and forecast.
     """
 
